@@ -4,13 +4,22 @@ class Category(models.Model):
     name = models.CharField(max_length=55)
     description = models.CharField(max_length=255)
 
+    class Meta:
+        verbose_name_plural = "categories"
+
+    def __str__(self):
+        return self.name
+
 class Author(models.Model):
     name = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     biography = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "authors"
+
     def __str__(self):
-        return self.nome
+        return self.name
     
 class Post(models.Model):
     # Main data
@@ -22,3 +31,9 @@ class Post(models.Model):
     # Auto-managed data
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name_plural = "posts"
+
+    def __str__(self):
+        return self.title
