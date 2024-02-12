@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 class Category(models.Model):
     name = models.CharField(max_length=55)
@@ -24,7 +25,8 @@ class Author(models.Model):
 class Post(models.Model):
     # Main data
     title = models.CharField(max_length=255)
-    body = models.TextField()
+    description = models.CharField(max_length=160)
+    body = RichTextField()
     authors = models.ManyToManyField("Author")
     categories = models.ManyToManyField("Category")
 
