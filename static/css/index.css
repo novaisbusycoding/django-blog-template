@@ -1,0 +1,66 @@
+/* Header */
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('../img/headerbg2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white !important;
+}
+header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700 !important;
+    font-size: 3rem;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.dots {
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+  
+
+.post {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.post .title a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.post .description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.post .meta .date {
+    font-size: 0.8rem;
+}
+
+
+footer {
+    background-color: white;
+    height: 200px;
+}
